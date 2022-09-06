@@ -1,25 +1,7 @@
-void main(List<String> args) {
-  Hewan hewanA = Hewan(3);
-  Hewan hewanB = Hewan(2);
-  Mobil mobil = Mobil(4);
-
-  mobil.tambahMuatan(hewanA);
-  mobil.tambahMuatan(hewanB);
-}
-
-//Kelas Hewan dengan Property berat
-class Hewan{
-  //Property berat
-  late int berat;
-  
-  Hewan(int berat){
-    this.berat = berat;
-  }
-  
-}
-
 //Kelas Mobil dengan Property kapasitas, muatan
 //Kelas Mobil dengan Method tambahMuatan dan totalMuatan
+import 'test10.1.dart';
+
 class Mobil{
   //Property kapasitas dan muatan
   late int kapasitas;
