@@ -8,4 +8,6 @@ void main(List<String> args) {
 
   mobil.tambahMuatan(hewanA);
   mobil.tambahMuatan(hewanB);
+
+  print("Total muatan = ${mobil.totalMuatan()}");
 }
