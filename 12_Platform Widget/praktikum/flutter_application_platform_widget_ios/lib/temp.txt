@@ -1,0 +1,19 @@
+Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            const SizedBox(height: 50),
+            CupertinoSearchTextField(
+              controller: textController,
+              placeholder: 'Search',
+            ),
+            Text(
+              'You have pressed the button $count times.'
+              ),
+            CupertinoButton.filled(
+              onPressed: onPressed,
+              alignment: Alignment.center,
+              child: const Icon(CupertinoIcons.add),
+              )
+          ],
+        )
