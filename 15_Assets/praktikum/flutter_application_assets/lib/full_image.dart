@@ -27,9 +27,11 @@ class _FullImageState extends State<FullImage> {
               children: [
                 const Text('Tap empty space to exit from fullscreen', style: TextStyle(color: Colors.white),),
                 const SizedBox(height: 16,),
-                GestureDetector(
-                  onTap: () {},
-                  child: Image(image: NetworkImage(widget.url),)
+                Flexible(
+                  child: GestureDetector(
+                    onTap: () {},
+                    child: Image(image: NetworkImage(widget.url),)
+                  ),
                 ),
               ],
             )
